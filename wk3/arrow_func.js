@@ -3,9 +3,7 @@ var outputMessage = function(message1, message2) {
     console.log(message1);
     console.log(message2);
 };
-
 // is the same as:
-
 var outputMessageArrow = (message1, message2) => {
     console.log(message1);
     console.log(message2);
