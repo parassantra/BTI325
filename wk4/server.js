@@ -35,7 +35,6 @@ app.get("/userId",(req,res)=>{
    res.send("User ID is: "+ req.query.userId);
    //res.send("ID");
 });
-
 //all other routes
 app.use((req,res)=>{
     res.status(404).send("Page Not Found");
