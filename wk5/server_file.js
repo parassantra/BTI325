@@ -58,7 +58,7 @@ app.post("/register-user",upload.single("photo"),(req,res)=>{
         "Your File data was: <br>" + JSON.stringify(formFile) + "<br> <br>" +
         "<p style='color:red;'> Your name is: " + formData.name + "</p> <br>"+
         "<br> <p> This is the image you sent: <br> "+
-        "<img src = '/photos/"+ formFile.filename +"' width=200 height =300/>";
+        "<img src = '/photos/"+ formFile.filename +"' width=300 height =200/>";
         res.send(dataReceived);
         
 });

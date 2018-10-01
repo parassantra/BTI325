@@ -45,8 +45,8 @@ app.post("/register-user", (req,res)=>{
                       "Your userName is: " + req.body.username + "<br>" +
                       "Your password is: " + req.body.password +"<br>" +
                       "Your email is: " + req.body.email + "<br>";
-    res.send(textValue);
-   // res.json({message:textValue});
+    //res.send(textValue);
+    res.json({message:textValue});
 });
 
 app.listen(HTTP_PORT, onHttpStart);
